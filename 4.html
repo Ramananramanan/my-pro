@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./4.css">
+</head>
+<body>
+    <div class="B-g">
+    <div class="bala">
+      <div><br><br>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+  </div>
+   <br>
+    <form>
+      <fieldset>
+        <label for="first-name">&nbsp; Enter Your First Name : <input id="first-name" name="first-name" type="text" required ></label>
+        <label for="last-name">&nbsp; Enter Your Last Name : <input id="last-name" name="last-name" type="text" required ></label>
+        <label for="email">&nbsp; Enter Your Email : <input id="email" name="email" type="email" required></label>
+        <label for="new-password">&nbsp; Create a New Password : <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>&nbsp; Account type (required) :</legend>
+        <label for="personal-account"><input id="personal-account"  type="radio" name="account-type" class="inline" checked >Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" >Business</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">&nbsp; Upload a profile picture :</label><input id="profile-picture" type="file" name="text-file" >
+        <label for="age">&nbsp; Input your age (years) :</label><input id="age" type="number" name="birth-age" min="13" max="120" placeholder="Type hear..." >
+        <label for="referrer" class="referrer" >&nbsp; How did you hear about us ?
+          <select name="ref" id="referrer">
+            <option  value="1">select one</option>
+            <option  value="2">freeCodeCamp News</option>
+            <option  value="3">freeCodeCamp YouTube Channel</option>
+            <option  value="4">freeCodeCamp Forum</option>
+            <option  value="5">Other</option>
+          </select>
+        </label>
+        <label for="bio">&nbsp; Provide a bio :
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>&nbsp; What would you like to see improved?<br>&nbsp; <small>(Check all that apply) ...!</small> </label>
+        <label for="front-end-projects"></label><input type="checkbox" id="front-end-projects" class="inline" value="front-end-projects"> Front-end-Projects
+        <label for="back-end-projects"></label><input type="checkbox" id="back-end-projects" class="inline" value="back-end-projects"> Back-end-Projects
+        <label for="data-visualization"></label><input type="checkbox" id="data-visualization" class="inline" value="data-visualization"> Data-visualization
+        <label for="challenges"></label><input type="checkbox" id="challenges" class="inline" value="challenges"> Challenges
+        <label for="open-source-community"></label><input type="checkbox" id="open-source-community" class="inline" value="open-source-community"> Open-Source-Community
+        <label for="gitter-help-rooms"></label><input type="checkbox" id="gitter-help-rooms" class="inline" value="gitter-help-rooms"> Gitter-help-rooms
+        <label for="videos"></label><input type="checkbox" id="videos" class="inline" value="videos"> Videos
+        <label for="city-meetups"></label><input type="checkbox" id="city-meetups" class="inline" value="city-meetups"> City-Meetups
+        <label for="wiki"></label><input type="checkbox" id="wiki" class="inline" value="wiki"> Wiki
+        <label for="forum"></label><input type="checkbox" id="forum" class="inline" value="forum"> Forum
+        <label for="additional-courses"></label><input type="checkbox" id="additional-courses" class="inline" value="additional-courses"> Additional-Courses
+      </fieldset>
+         <label for="terms-and-conditions" class="inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I accept the <a href="http://127.0.0.1:5500/4.html">Terms and Conditions</a></label> 
+        <input type="checkbox" required id="terms-and-conditions" name="terms-and-conditions" class="inline">
+    <fieldset>
+        <label for="sub" class="inline"></label>
+<input type="submit" value="Submit" id="sub">
+      
+    </fieldset>
+    </form><br><br></div></div>     
+  </body>
+</html>
+
+

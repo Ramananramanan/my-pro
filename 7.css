@@ -1,0 +1,66 @@
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(./img/back-star1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    color: #fff;
+    backdrop-filter: brightness(60%);
+    /*
+    backdrop-filter: opacity(50%);
+    border-bottom: 3px 3px solid #d7d7d7;
+    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(180%) 
+    backdrop-filter: hue-rotate(180deg);ext..;
+    */
+  }
+    
+ 
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+.photo{
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+  
+/*this line give (img cantinue non center img)     
+.gallery::after {
+content: "";
+width: 350px;
+}
+*/
+  
+  
